@@ -101,6 +101,7 @@ section#top img {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background-color: #000000;
 }
 
 .barrenav a:empty {
@@ -133,11 +134,12 @@ nav a button
 footer {
   background-color: #212020dc;
   display: flex;
+
   justify-content: center; /* Center horizontally */
   align-items: center;     /* Center vertically */
   width: 100%;               /* Allow full width on small screens */
-  border-radius: 1px;
-  border-width: 1px;
+  border-radius: 0;
+  border-width: 0;
 }
 
 footer p {
@@ -232,7 +234,7 @@ main .titre{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #979392d3;
+  background: linear-gradient(#7b00c2, #979392);
   border-radius: 3px;
 }
 
@@ -423,10 +425,10 @@ img {
 
 #player-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  bottom: 3vw;
+  right: 3vw;
+  width: 5vw;
+  height: 5vw;
   font-size: clamp(6px, 2vw, 24px);
   background-color: #333;
   color: white;
@@ -438,13 +440,13 @@ img {
 
 #player-container {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 10vw;
+  right: 5vw;
   display: none;
-  background-color: #00000000;
+  background-color: #000000;
   padding: 10px;
   z-index: 1000;
-  color: #000000;
+  color: #a8a8a8;
 }
 
 #next-button {
