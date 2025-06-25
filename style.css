@@ -87,11 +87,17 @@ section#top img {
   max-width: 100%;  /* Prevent it from exceeding container width */
 }
 
+.barrenav-wrapper {
+  width: 100%;
+  padding: 0 2vw;
+  box-sizing: border-box;
+}
+
 .barrenav {
   height: 150%;
   width: 100%;
   display: grid;
-  grid-template-columns: 33.33% 33.34% 33.33%;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .barrenav a:empty {
