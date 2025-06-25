@@ -89,7 +89,10 @@ section#top img {
 
 .barrenav-wrapper {
   width: 100%;
-  padding: 0 2vw;
+  max-width: 3000px;         /* Limit max width */
+  margin: 0 auto;            /* Center it horizontally */
+  width: 100%;               /* Allow full width on small screens */
+  padding: 0 2vw;            /* Small inner padding for breathing room */
   box-sizing: border-box;
 }
 
@@ -306,7 +309,7 @@ h3{
 
 #Presentation1 {
   display: flex;
-  max-width: 1200px;         /* Limit max width */
+  max-width: 3000px;         /* Limit max width */
   margin: 0 auto;            /* Center it horizontally */
   width: 100%;               /* Allow full width on small screens */
   padding: 0 2vw;            /* Small inner padding for breathing room */
@@ -335,7 +338,7 @@ h3{
 #Presentation {
   display: grid;
   grid-template-columns: 2fr 1fr;   /* First column is wider */
-  max-width: 1200px;         /* Limit max width */
+  max-width: 3000px;         /* Limit max width */
   margin: 0 auto;            /* Center it horizontally */
   width: 100%;               /* Allow full width on small screens */
   padding: 0 2vw;            /* Small inner padding for breathing room */
@@ -413,7 +416,7 @@ img {
   background-color: transparent;
   padding: 1em;
   text-align: middle;
-  font-size: calc(2px + 1vw)
+  font-size: calc(2px + 1vw);
 }
 
 
