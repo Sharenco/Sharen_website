@@ -90,7 +90,7 @@ section#top img {
 
 nav a button 
 {
-  font-size:20px;
+  font-size: clamp(12px, 2vw, 20px);
 }
 
 
@@ -109,7 +109,7 @@ footer {
   border-radius: 1px;
   color: #8e8a86;
   border-width: 1px;
-  font-size: 5px;
+  font-size: clamp(2px, 2vw, 5px);;
   padding: 10px; /* Optional, for spacing */
   text-align: center; /* Needed for multi-line text */
 }
@@ -133,7 +133,7 @@ h2{
 .navbar a {
   color: #aaa;
   display: inline-block;
-  font-size: 15px;
+  font-size: clamp(10px, 2vw, 15px);;
   padding: 10px;
   text-decoration: none;
 }
@@ -263,7 +263,7 @@ form h3
 
 
 h1 {
-  font-size: 30px;
+  font-size: clamp(15px, 5vw, 30px);
   text-align: center;
   color: #8938bb;
 }
