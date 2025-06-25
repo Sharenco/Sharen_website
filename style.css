@@ -1,0 +1,411 @@
+/* commun */
+header {
+  margin: 0 auto;
+
+  color: rgb(255, 255, 255);
+  background-color:#2e2a28;
+
+  background-image: url("");
+  background-position: center middle;
+  background-size: cover;
+	background-repeat: repeat-y;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  font-family: sans-serif; 
+  margin: 0; /* Remove default margin */
+  color: rgb(255, 255, 255);
+
+  background-image: url("Media/Image/Background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; /* Ensures it covers the full screen */
+  background-attachment: fixed; /* Prevents it from scrolling */
+}
+
+.topnav {
+  position: absolute;
+  top: 0;
+  gap: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-width: 1px;
+  background: linear-gradient(to right, #b7292987, #00000087, #2453b787);
+}
+
+.topnav a button {
+  background-color:#68129970;
+  width: 100%;
+  height:100%;
+  border-width: 1px;
+}
+
+
+section#top {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#top img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 30%;       /* Make it 30% of the container's width */
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+.barrenav {
+  height: 150%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  margin: 0 auto;
+}
+
+.barrenav a:empty {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+.barrenav a button {
+  background-color:#000000;
+  width: 100%;
+  height:100%;
+  border-width: 1px;
+  color: white;
+}
+
+nav a button 
+{
+  font-size:20px;
+}
+
+
+#logosite img {
+  width: auto;
+  height: auto;
+}
+
+
+footer {
+  background-color: #212020dc;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  margin: 0 20%;
+  border-radius: 1px;
+  color: #8e8a86;
+  border-width: 1px;
+  font-size: 5px;
+  padding: 10px; /* Optional, for spacing */
+  text-align: center; /* Needed for multi-line text */
+}
+
+div#Rights
+{
+  text-align: left;
+}
+
+
+
+h2{
+  text-align: center;
+}
+
+.navbar {
+  background-color: #313236;
+  max-width: 800px;
+}
+
+.navbar a {
+  color: #aaa;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+
+table {
+  border:3px solid rgb(0, 0, 0);
+  background-color: #F5F5F5;
+  text-align:center;
+  margin:auto;
+  margin-top: 2%;
+  width:75%;
+}
+
+caption {
+  color:black;
+  font-weight:bold;
+  font-size:150%;
+  font-family: sans-serif, cursive;
+  margin-bottom:1rem;
+}
+
+th
+{
+  border-width:2px;
+  border-style:solid;
+  border-color:yellow;
+  color:black;
+  background-color:orange;
+}
+
+td
+{
+  border-width:1px;
+  border-style:solid;
+  border-color:black;
+}
+
+.titre
+{
+  font-family: sans-serif, cursive;
+  text-align:center;
+}
+
+main .titre{
+  font-size:2rem;
+}
+
+
+
+/*Customisation de la barre scroll a droite*/
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  background-color: linear-gradient(#7b00c2, #000000);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #979392d3;
+  border-radius: 3px;
+}
+
+/*definition de l'affichage du form*/
+section#form form{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin:1rem;
+}
+
+div#Client{
+  background-color:orange;
+  opacity:0,7;
+  padding:10px;
+  border-radius:1rem;
+}
+div#Client div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+div#Composition{
+  display:grid;
+  grid-template-columns: 100%;
+  gap:2px;
+  margin-bottom: 3px;
+  background-color:orange;
+  opacity:0,7;
+  padding:10px;
+  border-radius:1rem;
+}
+div#Composition div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+fieldset{
+  border-color: white;
+  border-width: 3px;
+}
+
+form button
+{
+  margin-top: 1rem;
+  padding:5px;
+  border-radius:10px;
+  align-self: stretch;
+  justify-self: stretch;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-area: 7/1/span 2/2;
+}
+
+form h3
+{
+  font-size:2rem;
+}
+
+
+/* Page acceuil */
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #8938bb;
+}
+
+
+
+h3{
+  text-align: center;
+}
+
+#Presentation1 {
+  display: flex;
+  margin: 0 20%;
+  box-sizing: border-box;
+}
+
+#Presentation1 p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#Presentation1 img {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 30%;       /* Make it 30% of the container's width */
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+
+#Presentation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;   /* First column is wider */
+  margin: 0 20%;
+  box-sizing: border-box;
+}
+
+#Presentation video {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+.column1 p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#Presentation img {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 30%;       /* Make it 30% of the container's width */
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+
+a:link{
+  color: #8938bb;
+}
+
+a:visited{
+  color: whitesmoke;
+}
+
+/* Optional, to keep the boxes aligned vertically */
+.column {
+  background-color: #2f2f2ff2;
+  display: flex;
+  flex-direction: column;
+}
+
+.column1 {
+  background-color: #281d37f2;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.column2 {
+  background-color: rgb(181, 181, 181);
+  display: flex;
+  flex-direction: column;
+  color:rgb(0, 0, 0);
+}
+
+/* Each box */
+.box {
+  background-color: transparent;
+  padding: 1em;
+  text-align: left;
+}
+
+li.diapo img{
+  width:100%;
+}
+
+#player-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#player-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  background-color: #00000000;
+  padding: 10px;
+  z-index: 1000;
+  color: #000000;
+}
+
+#next-button {
+
+  align-self: right;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}

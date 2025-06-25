@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sharen's website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/webp" href="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="This is my main webpage, where I'll surely post things and maybe do some blog posting">
+    </head>
+
+
+    <body>
+        <header>
+            <nav class="topnav">
+                <a href="https://discord.gg/zKce8ES4rn">
+                    <button>
+                        My Discord (Dying) Server
+                    </button>
+                </a>
+                <!--
+                <a href=''>
+                    <button>
+                        
+                    </button>
+                </a>
+                <a href=''>
+                    <button>
+                        
+                    </button>
+                </a>
+                -->
+            </nav>
+        </header>
+
+
+        <main>
+            <section id="top">
+                <img src="Media/Image/Fake3DSharen/heh.png" alt="">
+            </section>
+
+
+            <section>
+                <div id="Presentation1">
+                    <div class="column">
+                        <div class="box">
+                            <h1>Oh uh, hey! Welcome to my uh... Mess of a website!</h1>
+                            <p>Hello, I'm Sharen, also known as "<a href="https://discordapp.com/users/700421141206007919">Sharenco</a>" or even "<a href="https://www.twitch.tv/sharen_44">Sharen_44</a>", I'm a budding Vtuber, I'm 21 years old and although my avatar is a girl, I'm a man, I wanted to make this web page and maybe even a whole site to share information about myself, my life, or even my interests!</p>
+                            <img src="Media/Image/Fake3DSharen/uwu.png" alt="Sharen's OC doing an UwU pose with fingers touching each others">
+                        </div>
+                        <div class="box">
+                            <p>Depsite being French, I can write and talk in english, I speak less fluently and with a big accent though...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="barrenav">
+                <a></a>
+                <a href="Sharen_44.html">
+                    <button  disabled>
+                        Home
+                    </button>
+                </a>
+                <a href="">
+                    <button disabled>
+                        Nothing YET
+                    </button>
+                </a>
+                <a href="">
+                    <button disabled>
+                        Nothing YET
+                    </button>
+                </a> 
+                <a></a>
+            </nav>
+
+            <section>
+                <div id="Presentation">
+                    <div class="column1">
+                        <div class="box">
+                            <h1>Why did I wanted to make a Website?</h1>
+                            <img src="Media/Image/Fake3DSharen/standing.png">
+                            <p>I see more and more videos on YouTube about the fact that people used to make their own little webpages to goof around or even to test their own knowledge to do so, thus I thought "why not making one myself" and instead of using modules to do it, I wanted to make it from scratch myself!</p>
+                        </div>
+                        <!-- <div class="box">
+                            <p>Another box in left column</p>
+                        </div> -->
+                    </div>
+                    <div class="column2">
+                        <div class="box">
+                            <h2>I aslo have a Live2D model!</h2>
+                            <video controls>
+                                <source src="Media/Video/SharenPreview.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>
+                            <p>But sadly I have issues with my GPU and most of the time I will use my PNJ instead...</p>
+                        </div>
+                        <!--
+                        <div class="box">
+                            <p>Another box in right column</p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+            <!-- Audio Player UI -->
+            <div id="player-container">
+                <audio id="audio-player" controls>
+                    Your browser does not support the audio element.
+                </audio>
+                <div id="track-name"></div>
+                <button id="next-button">Next ▶</button>
+            </div>
+
+            <!-- Floating Button -->
+            <button id="player-button">🎵</button>
+        </main>
+        <script>
+            const audioFiles = [
+                "Media/Audio/3_am_idea-_afterwork_on_midnight.mp3",
+                "Media/Audio/adventura.ogg",
+                "Media/Audio/battle_1.ogg",
+                "Media/Audio/battle_retro.mp3",
+                "Media/Audio/battleE.mp3",
+                "Media/Audio/boss_battle_V0.9.mp3",
+                "Media/Audio/chill_and_groove.mp3",
+                "Media/Audio/first_questV2.mp3",
+                "Media/Audio/get_ready.mp3",
+                "Media/Audio/good_day_max.ogg",
+                "Media/Audio/i_see.mp3",
+                "Media/Audio/i_see.mp3",
+                "Media/Audio/icy_cave.mp3",
+                "Media/Audio/jump_derpy_instrumental.mp3",
+                "Media/Audio/nonameyet_V1.1.mp3",
+                "Media/Audio/number2.5.mp3",
+                "Media/Audio/stinkychillo.mp3",
+                "Media/Audio/utopia.mp3"
+                
+                // Add more manually as needed
+            ];
+
+            let currentTrack = 0;
+
+            const audio = document.getElementById("audio-player");
+            const trackName = document.getElementById("track-name");
+            const btn = document.getElementById("player-button");
+            const container = document.getElementById("player-container");
+            const nextButton = document.getElementById("next-button");
+
+            function loadTrack(index) {
+                audio.src = audioFiles[index];
+                trackName.textContent = audioFiles[index].split("/").pop();
+                audio.play();
+            }
+
+            btn.addEventListener("click", () => {
+                // Show or hide the player UI, but DON'T pause the audio
+                if (container.style.display === "none" || container.style.display === "") {
+                container.style.display = "block";
+
+                // Only load and play if it's not already playing
+                if (audio.src === "") {
+                    loadTrack(currentTrack);
+                }
+                } else {
+                    container.style.display = "none";
+                }
+            });
+
+            nextButton.addEventListener("click", () => {
+                currentTrack = (currentTrack + 1) % audioFiles.length;
+                loadTrack(currentTrack);
+            });
+
+            // Optional: Auto-play next track on end
+            audio.addEventListener("ended", () => {
+                currentTrack = (currentTrack + 1) % audioFiles.length;
+                loadTrack(currentTrack);
+            });
+        </script>
+
+        <footer>
+            <p>Wow you made it to the end! You either were really interested about me or you either had time to lose, anyway, I thank everyone of you to have stopped by to read my little webpage, I will try to keep it updated with notes and updates about me and my life and other stuff too!</p>
+        </footer>
+
+    </body>
+</html>
