@@ -274,12 +274,13 @@ h3{
   text-align: center;
 }
 
-#Presentation1 {
-  display: flex;
-  margin: 0 20%;
+#Presentation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 5%;
   box-sizing: border-box;
+  gap: 1rem;
 }
-
 #Presentation1 p {
   color: whitesmoke;
   text-align: center;
