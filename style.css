@@ -24,11 +24,25 @@ body {
 
   background-color: #000000;
 
-  background-image: url("Media/Image/Background.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; /* Ensures it covers the full screen */
-  background-attachment: fixed; /* Prevents it from scrolling */
+  /* background-attachment: fixed; Prevents it from scrolling */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("Media/Image/Background.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none; /* Allow clicking through */
 }
 
 .topnav {
