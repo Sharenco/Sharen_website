@@ -274,13 +274,14 @@ h3{
   text-align: center;
 }
 
-#Presentation {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 0 5%;
+#Presentation1 {
+  display: flex;
+  padding: 0 20%;
   box-sizing: border-box;
   gap: 1rem;
 }
+
+
 
 #Presentation1 p {
   color: whitesmoke;
@@ -405,26 +406,21 @@ li.diapo img{
 }
 
 #next-button {
-
   align-self: right;
   margin-top: 10px;
   padding: 5px 10px;
   font-size: 14px;
 }
 
-.video-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
 
 #fullscreen-button {
+  display: flex;
   padding: 6px 12px;
   font-size: 14px;
   background-color: #333;
   color: white;
   border: none;
+  margin: 0 auto;
   border-radius: 5px;
   cursor: pointer;
 }
