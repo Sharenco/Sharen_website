@@ -92,7 +92,6 @@ section#top img {
   width: 100%;
   display: grid;
   grid-template-columns: 33.33% 33.34% 33.33%;
-  margin: 0 auto;
 }
 
 .barrenav a:empty {
@@ -129,7 +128,6 @@ footer {
   align-items: center;     /* Center vertically */
   width: 100%;               /* Allow full width on small screens */
   border-radius: 1px;
-  margin: 0 auto;
   border-width: 1px;
 }
 
