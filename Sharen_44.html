@@ -96,6 +96,7 @@
                             <video controls>
                                 <source src="Media/Video/SharenPreview.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
+                                <button id="fullscreen-button">⛶ Fullscreen</button>
                                 </video>
                             <p>But sadly I have issues with my GPU and most of the time I will use my PNJ instead...</p>
                         </div>
@@ -180,6 +181,18 @@
             audio.addEventListener("ended", () => {
                 currentTrack = (currentTrack + 1) % audioFiles.length;
                 loadTrack(currentTrack);
+            });
+            const fullscreenButton = document.getElementById("fullscreen-button");
+            const video = document.getElementById("presentation-video");
+
+            fullscreenButton.addEventListener("click", () => {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) { /* Safari */
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) { /* IE11 */
+                    video.msRequestFullscreen();
+                }
             });
         </script>
 
