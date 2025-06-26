@@ -106,7 +106,4 @@ document.addEventListener("DOMContentLoaded", function () {
     if (savedTrack !== null && wasPaused) {
         showPlayerAndPlayIfReady();
     }
-    if (savedTrack !== null && !wasPaused) {
-        showPlayerAndPlayIfReady();
-    }
 });
