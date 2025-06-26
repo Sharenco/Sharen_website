@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // If a track was saved, start playing and show the player
-    if (savedTrack !== null && wasPaused) {
+    if (savedTrack !== null && !wasPaused) {
         showPlayerAndPlayIfReady();
     }
 });
