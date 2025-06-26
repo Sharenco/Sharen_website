@@ -27,7 +27,7 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
     <body>
         <header>
             <nav class="topnav">
-                <a href="https://discord.gg/zKce8ES4rn">
+                <a href="https://discord.gg/zKce8ES4rn" target="_blank" rel="noopener noreferrer">
                     <button>
                         My Discord (Dying) Server
                     </button>
@@ -61,16 +61,12 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
                     <div class="column">
                         <div class="box">
                             <h1>Oh uh, hey! Welcome to my uh... Mess of a website!</h1>
-                            <p>Hello, I'm Sharen, also known as "<a href="https://discordapp.com/users/700421141206007919">Sharenco</a>" or even "<a href="https://www.twitch.tv/sharen_44">Sharen_44</a>", I'm a budding Vtuber, I'm 21 years old and although my avatar is a girl, I'm a man, I wanted to make this web page and maybe even a whole site to share information about myself, my life, or even my interests!</p>
+                            <p>Hello, I'm Sharen, also known as "<a href="https://discordapp.com/users/700421141206007919" target="_blank" rel="noopener noreferrer">Sharenco</a>" or even "<a href="https://www.twitch.tv/sharen_44" target="_blank" rel="noopener noreferrer">Sharen_44</a>", I'm a budding Vtuber, I'm 21 years old and although my avatar is a girl, I'm a man, I wanted to make this web page and maybe even a whole site to share information about myself, my life, or even my interests!</p>
                             <img src="Media/Image/Fake3DSharen/uwu.png" alt="Sharen's OC doing an UwU pose with fingers touching each others">
                         </div>
-
-
                         <div class="box">
-                            <p>Depsite being French, I can write and talk in english, I speak less fluently and with a big accent though...</p>
+                            <p>Depsite being French, I can write and talk in english, I speak less fluently and with a big accent though... And yes, I decided to make my own website in english, but there is a translate option so who cares?</p>
                         </div>
-
-                        
                     </div>
                 </div>
 
@@ -83,9 +79,9 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
                                 Home
                             </button>
                         </a>
-                        <a href="">
-                            <button disabled>
-                                Nothing YET
+                        <a href="Sharen_44-Links.html">
+                            <button>
+                                My Links
                             </button>
                         </a>
                         <a href="">
@@ -101,20 +97,17 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
             <section>
                 <div id="Presentation">
 
-
                     <div class="column1">
 
                         <div class="box">
                             <h1>Why did I wanted to make a Website?</h1>
                             <img src="Media/Image/Fake3DSharen/standing.png">
-                            <p>I see more and more videos on YouTube about the fact that people used to make their own little webpages to goof around or even to test their own knowledge to do so, thus I thought "why not making one myself" and instead of using modules to do it, I wanted to make it from scratch myself!</p>
-                        </div>
-
-                        <div class="box">
-                            <p>I tried my best to make the website adaptative without using any "@media" always hated it when I was in class and our teacher asking us to do so, so instead i tried some other ways with some success and some issues (yes I see you music button, I'll check on you when I'll feel like it), speaking of which, all the audios you'll hear from it are made by me, some good, some bad, some that's fire.</p>
+                            <p>I've seen more and more videos on YouTube about the fact that people used to make their own little webpages to goof around or even to test their own knowledge to do so, thus I thought "why not making one myself" and instead of using modules to do it, I wanted to make it from scratch myself!</p>
                         </div>
 
                     </div>
+
+
 
 
 
@@ -138,6 +131,21 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
 
                     </div>
                 </div>
+
+
+                <div id="Presentation2">
+                    <div class="column1">
+                        <div class="box">
+                            <p>I tried my best to make the website adaptative without using any "@media" always hated it when I was in class and our teacher asking us to do so, so instead i tried some other ways with some success and some issues (yes I see you music button, I'll check on you when I'll feel like it), speaking of which, all the audios you'll hear from it are made by me, some good, some bad, some that's fire.</p>
+                        </div>
+                        <div class="box">
+                            <p>These last days were pretty rough, I'm even working on making my own DIY air conditioner using a fan, iced cans, and a box of cardboard Lol.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </section>
             <!-- Audio Player UI -->
             <div id="player-container">
@@ -159,79 +167,8 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
         </div>
 
 
-        <script>
-            const audioFiles = [
-                "Media/Audio/3_am_idea-_afterwork_on_midnight.mp3",
-                "Media/Audio/adventura.ogg",
-                "Media/Audio/battle_1.ogg",
-                "Media/Audio/battle_retro.mp3",
-                "Media/Audio/battleE.mp3",
-                "Media/Audio/boss_battle_V0.9.mp3",
-                "Media/Audio/chill_and_groove.mp3",
-                "Media/Audio/first_questV2.mp3",
-                "Media/Audio/get_ready.mp3",
-                "Media/Audio/good_day_max.ogg",
-                "Media/Audio/i_see.mp3",
-                "Media/Audio/icy_cave.mp3",
-                "Media/Audio/jump_derpy_instrumental.mp3",
-                "Media/Audio/nonameyet_V1.1.mp3",
-                "Media/Audio/number2.5.mp3",
-                "Media/Audio/stinkychillo.mp3",
-                "Media/Audio/utopia.mp3"
-                
-                // Add more manually as needed
-            ];
 
-            let currentTrack = 0;
-
-            const audio = document.getElementById("audio-player");
-            const trackName = document.getElementById("track-name");
-            const btn = document.getElementById("player-button");
-            const container = document.getElementById("player-container");
-            const nextButton = document.getElementById("next-button");
-
-            function loadTrack(index) {
-                audio.src = audioFiles[index];
-                trackName.textContent = audioFiles[index].split("/").pop();
-                audio.play();
-            }
-
-            btn.addEventListener("click", () => {
-                // Show or hide the player UI, but DON'T pause the audio
-                if (container.style.display === "none" || container.style.display === "") {
-                container.style.display = "block";
-
-                // Only load and play if it's not already playing
-                if (audio.src === "") {
-                    loadTrack(currentTrack);
-                }
-                } else {
-                    container.style.display = "none";
-                }
-            });
-
-            nextButton.addEventListener("click", () => {
-                currentTrack = (currentTrack + 1) % audioFiles.length;
-                loadTrack(currentTrack);
-            });
-
-            // Optional: Auto-play next track on end
-            audio.addEventListener("ended", () => {
-                currentTrack = (currentTrack + 1) % audioFiles.length;
-                loadTrack(currentTrack);
-            });
-            const fullscreenButton = document.getElementById("fullscreen-button");
-            const video = document.getElementById("avideo");
-
-            fullscreenButton.addEventListener("click", () => {
-                if (video.requestFullscreen) {
-                    video.requestFullscreen();
-                } else if (video.webkitRequestFullscreen) { /* Safari */
-                    video.webkitRequestFullscreen();
-                } else if (video.msRequestFullscreen) { /* IE11 */
-                    video.msRequestFullscreen();
-                }
-            });
-        </script>
     </body>
+
+    <script src="audioplayer.js"></script>
 </html>

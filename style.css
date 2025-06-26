@@ -69,6 +69,10 @@ body::before {
   text-decoration: none
 }
 
+.barrenav a:link {
+  text-decoration: none
+}
+
 
 section#top {
   width: 100%;
@@ -310,6 +314,32 @@ h1 {
 h3{
   text-align: center;
 }
+
+#Presentation2 {
+  display: flex;
+  max-width: 3000px;         /* Limit max width */
+  margin: 0 auto;            /* Center it horizontally */
+  width: 100%;               /* Allow full width on small screens */
+  padding: 0 2vw;            /* Small inner padding for breathing room */
+  box-sizing: border-box;
+}
+
+#Presentation2 p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#Presentation2 img {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
 
 #Presentation1 {
   display: flex;
