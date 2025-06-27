@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             audio.play();
             }, { once: true });
+        } else {
+            audio.play();
         }
 
         // Save the current track index
@@ -102,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // If a track was saved, start playing and show the player
     if (savedTrack !== null && !wasPaused) {
-        showPlayer();
-        audio.play();
+        showPlayerAndPlayIfReady();
     }
 });
