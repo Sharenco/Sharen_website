@@ -461,11 +461,11 @@ img {
 
 #player-button {
   position: fixed;
-  bottom: 3vw;
-  right: 3vw;
-  width: 5vw;
-  height: 5vw;
-  font-size: clamp(6px, 2vw, 24px);
+  bottom: 2vw;
+  right: 2vw;
+  width: clamp(50px, 8vw, 80px);
+  height: clamp(50px, 8vw, 80px);
+  font-size: clamp(18px, 3vw, 28px);
   background-color: #333;
   color: white;
   border: none;
@@ -476,13 +476,25 @@ img {
 
 #player-container {
   position: fixed;
-  bottom: 10vw;
-  right: 5vw;
+  bottom: calc(2vw + clamp(50px, 8vw, 80px) + 1vw); /* Just above the button */
+  right: 2vw;
+
   display: none;
-  background-color: #000000;
-  padding: 10px;
-  z-index: 1000;
+  background-color: #000000ee;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px #00000077;
+  z-index: 999;
+
+  width: clamp(200px, 40vw, 300px); /* Optional: responsive width */
   color: #a8a8a8;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+#player-container audio {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #next-button {
