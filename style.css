@@ -46,14 +46,16 @@ body::before {
 }
 
 .topnav {
-  position: absolute;
-  top: 0;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  border-width: 1px;
-  background: linear-gradient(to right, #b7292987, #00000087, #2453b787);
+  align-items: center;
+  padding: 0;
+  background: linear-gradient(to right, #ff00002d, #0000002d, #0051ff2d);
 }
+
+
 
 .topnav a button {
   background-color:#68129970;
@@ -504,6 +506,9 @@ img {
   font-size: clamp(3px, 2vw, 14px);
 }
 
+a button p {
+  color: whitesmoke;
+}
 
 #fullscreen-button {
   display: flex;

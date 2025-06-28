@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "Media/Audio/number2.5.mp3",
         "Media/Audio/stinkychillo.mp3",
         "Media/Audio/utopia.mp3"
-        
-        // Add more manually as needed
     ];
 
     let currentTrack = 0;
