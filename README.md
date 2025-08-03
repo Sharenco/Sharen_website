@@ -2,4 +2,4 @@ This is only the repository of my own little website, I felt like doing so, all 
 
 I don't know what else to say, except that I accept any idea and that I'll make changes and post blogs overtime in it!
 
-Here is the real [homepage](https://sharenco.github.io/Sharen_website/Sharen_44-Links.html)
+Here is the real [homepage](https://sharenco.github.io/Sharen_website/Sharen_44.html)
