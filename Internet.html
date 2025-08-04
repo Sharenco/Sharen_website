@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <title>Click to Play</title>
-    <style>
-        body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        }
+        <meta charset="UTF-8">
+        <title>Click to Play</title>
+        <link rel="icon" type="image/webp" href="Media/Image/Icon.png">
+        <style>
+            body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            }
 
-        #play-button {
-        position: absolute;
-        z-index: 10;
-        padding: 1rem 2rem;
-        font-size: 1.25rem;
-        background-color: #ffffffcc;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        }
+            #play-button {
+            position: absolute;
+            z-index: 10;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            background-color: #ffffffcc;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            }
 
-        #play-button:hover {
-        background-color: #ffffffee;
-        }
+            #play-button:hover {
+            background-color: #ffffffee;
+            }
 
-        #media-container {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        }
+            #media-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            }
 
-        video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover; 
-        z-index: 1;
-        pointer-events: none;
-        }
-    </style>
+            video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; 
+            z-index: 1;
+            pointer-events: none;
+            }
+        </style>
     </head>
-        <body>
-            <button id="play-button">Click to Start</button>
 
-                 <div id="media-container">
-                    <video id="easter-video" width="640" height="360" controls>
-                        <source src="Media/Video/SharenPreview.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+    <body>
+        <button id="play-button">Click to Start</button>
 
-                    <audio id="easter-audio">
-                        <source src="Media/Audio/icy_cave.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+        <div id="media-container">
+            <video id="easter-video" width="640" height="360" controls>
+                <source src="Media/Video/SharenPreview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <audio id="easter-audio">
+                <source src="Media/Audio/icy_cave.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
         <script>
             window.addEventListener("DOMContentLoaded", () => {
