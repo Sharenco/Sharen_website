@@ -468,7 +468,7 @@ img {
   width: clamp(50px, 8vw, 80px);
   height: clamp(50px, 8vw, 80px);
   font-size: clamp(18px, 3vw, 28px);
-  background-color: #333;
+  background-color: #33333360;
   color: white;
   border: none;
   border-radius: 50%;
@@ -482,10 +482,10 @@ img {
   right: 2vw;
 
   display: none;
-  background-color: #000000ee;
+  background-color: #000000;
   padding: 1em;
   border-radius: 0.5em;
-  box-shadow: 0 0 10px #00000077;
+  box-shadow: 0 0 10px #0000003c;
   z-index: 999;
 
   width: clamp(200px, 40vw, 300px); /* Optional: responsive width */

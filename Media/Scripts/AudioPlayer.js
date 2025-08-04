@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Your full player code goes here
+  // Each audio file has to be added manually because the website has no data keeping, everything is stored locally
   const audioFiles = [
         "Media/Audio/3_am_idea-_afterwork_on_midnight.mp3",
         "Media/Audio/adventura.ogg",
