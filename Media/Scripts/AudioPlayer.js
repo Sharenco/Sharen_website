@@ -1,23 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Each audio file has to be added manually because the website has no data keeping, everything is stored locally
   const audioFiles = [
-        "Media/Audio/3_am_idea-_afterwork_on_midnight.mp3",
-        "Media/Audio/adventura.ogg",
-        "Media/Audio/battle_1.ogg",
-        "Media/Audio/battle_retro.mp3",
-        "Media/Audio/battleE.mp3",
-        "Media/Audio/boss_battle_V0.9.mp3",
-        "Media/Audio/chill_and_groove.mp3",
-        "Media/Audio/first_questV2.mp3",
-        "Media/Audio/get_ready.mp3",
-        "Media/Audio/good_day_max.ogg",
-        "Media/Audio/i_see.mp3",
-        "Media/Audio/icy_cave.mp3",
-        "Media/Audio/jump_derpy_instrumental.mp3",
-        "Media/Audio/nonameyet_V1.1.mp3",
-        "Media/Audio/number2.5.mp3",
-        "Media/Audio/stinkychillo.mp3",
-        "Media/Audio/utopia.mp3"
+        "../Media/Audio/3_am_idea-_afterwork_on_midnight.mp3",
+        "../Media/Audio/adventura.ogg",
+        "../Media/Audio/battle_1.ogg",
+        "../Media/Audio/battle_retro.mp3",
+        "../Media/Audio/battleE.mp3",
+        "../Media/Audio/boss_battle_V0.9.mp3",
+        "../Media/Audio/chill_and_groove.mp3",
+        "../Media/Audio/first_questV2.mp3",
+        "../Media/Audio/get_ready.mp3",
+        "../Media/Audio/good_day_max.ogg",
+        "../Media/Audio/i_see.mp3",
+        "../Media/Audio/icy_cave.mp3",
+        "../Media/Audio/jump_derpy_instrumental.mp3",
+        "../Media/Audio/nonameyet_V1.1.mp3",
+        "../Media/Audio/number2.5.mp3",
+        "../Media/Audio/stinkychillo.mp3",
+        "../Media/Audio/utopia.mp3"
     ];
 
     let currentTrack = 0;
