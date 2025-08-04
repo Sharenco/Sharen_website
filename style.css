@@ -238,7 +238,6 @@ main .titre{
 
 ::-webkit-scrollbar {
   height: 6px;
-  background-color: linear-gradient(#7b00c2, #000000);
 }
 
 ::-webkit-scrollbar-thumb {
