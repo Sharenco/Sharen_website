@@ -456,6 +456,9 @@ img {
 .box p {
   border-radius: 0.5em;  
   padding: 0.5em;       /* optional: gives breathing room inside */
+}
+
+.box2 {
   background-color: #00000031;
 }
 
@@ -509,18 +512,9 @@ a button p {
   color: whitesmoke;
 }
 
-#fullscreen-button {
-  display: flex;
-  padding: 6px 12px;
-  font-size: clamp(3px, 2vw, 14px);;
-  background-color: #333;
-  color: white;
-  border: none;
-  margin: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#fullscreen-button:hover {
-  background-color: #555;
+.timestamp {
+  position: absolute;
+  color:rgb(82, 82, 82);
+  bottom: 2%;   /* 2% from bottom of box */
+  left: 2%;     /* 2% from left of box */
 }
