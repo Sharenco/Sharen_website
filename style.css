@@ -456,12 +456,8 @@ img {
 .box p {
   border-radius: 0.5em;  
   padding: 0.5em;       /* optional: gives breathing room inside */
-}
-
-.box2 {
   background-color: #00000031;
 }
-
 
 #player-button {
   position: fixed;
