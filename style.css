@@ -295,11 +295,6 @@ form button
   grid-area: 7/1/span 2/2;
 }
 
-form h3
-{
-  font-size: calc(2px + 3vw);
-}
-
 
 /* Page acceuil */
 
@@ -312,8 +307,10 @@ h1 {
 
 
 
-h3{
+h3 {
+  font-size: calc(5px + 3vw);
   text-align: center;
+  color: #8938bb;
 }
 
 #Presentation2 {
