@@ -415,7 +415,7 @@ a:visited{
 .column .box h2{
   font-size: calc(4px + 2vw);
   text-align: center;
-  color: black;
+  color: whitesmoke;
 }
 
 .column1 .box h2{
