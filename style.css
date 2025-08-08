@@ -161,13 +161,6 @@ div#Rights
   text-align: left;
 }
 
-
-
-h2{
-  font-size: calc(4px + 2vw);
-  text-align: center;
-}
-
 .navbar {
   background-color: #313236;
   max-width: 800px;
@@ -307,11 +300,7 @@ h1 {
 
 
 
-h3 {
-  font-size: calc(5px + 3vw);
-  text-align: center;
-  color: #8938bb;
-}
+
 
 #Presentation2 {
   display: flex;
@@ -421,6 +410,24 @@ a:visited{
   background-color: #281d37f2;
   display: flex;
   flex-direction: column;
+}
+
+.column .box h2{
+  font-size: calc(4px + 2vw);
+  text-align: center;
+  color: black;
+}
+
+.column1 .box h2{
+  font-size: calc(5px + 3vw);
+  text-align: center;
+  color: #8938bb;
+}
+
+.column2 .box h3{
+  font-size: calc(4px + 2vw);
+  text-align: center;
+  color: black;
 }
 
 img {
