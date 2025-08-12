@@ -16,7 +16,7 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
         <meta charset="utf-8">
         <title>Sharen's links</title>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
         <link rel="icon" type="image/webp" href="Media/Image/Icon.png">
         <base href="/" /> <!-- This little shit is what makes the audio program works since the indexation update -->
         <meta name="viewport" content="width=device-width">
@@ -58,13 +58,14 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
                     <h2 data-en="My Links:" data-fr="Mes Liens:">My Links:</h2>
                     <p><a href="https://discordapp.com/users/700421141206007919" target="_blank" rel="noopener noreferrer" data-en="My Discord" data-fr="Mon Discord">My Discord</a></p>
                     <p 
-                        data-en='<a href="mailto:sharencos@gmail.com">My email</a> or if it does nothing, <a href="https://mail.google.com/mail/?view=cm&to=sharencos@gmail.com" target="_blank" rel="noopener noreferrer">My email' 
-                        data-fr='<a href="mailto:sharencos@gmail.com">Mon email</a> ou si ça ne marche pas, <a href="https://mail.google.com/mail/?view=cm&to=sharencos@gmail.com" target="_blank" rel="noopener noreferrer">Mon email'>
-                            <a href="mailto:sharencos@gmail.com">My email</a> or if it does nothing, <a href="https://mail.google.com/mail/?view=cm&to=sharencos@gmail.com" target="_blank" rel="noopener noreferrer">My email</a></p>
+                        data-en='<a href="mailto:sharencos@gmail.com">My email (local)</a> or if it does nothing, <a href="https://mail.google.com/mail/?view=cm&to=sharencos@gmail.com" target="_blank" rel="noopener noreferrer">My email (online)' 
+                        data-fr='<a href="mailto:sharencos@gmail.com">Mon email (local)</a> ou si ça ne marche pas, <a href="https://mail.google.com/mail/?view=cm&to=sharencos@gmail.com" target="_blank" rel="noopener noreferrer">Mon email (online)'>
+                            <a href="mailto:sharencos@gmail.com">My email (local)</a> or if it does nothing, <a href="https://mail.google.com/mail/?view=cm&to=sharencos@gmail.com" target="_blank" rel="noopener noreferrer">My email (online)</a></p>
                     <p><a href="https://www.twitch.tv/sharen_44" target="_blank" rel="noopener noreferrer" data-en="My streaming Channel" data-fr="Ma Chaine de streaming">My streaming Channel</a></p>
                     <p><a href="https://www.youtube.com/@SharenVOD" target="_blank" rel="noopener noreferrer" data-en="My VOD Channel" data-fr="Ma Chaine de VOD">My VOD Channel</a></p>
                     <p><a href="https://x.com/Sharenco1" target="_blank" rel="noopener noreferrer" data-en="My X/Twitter account" data-fr="Mon compte X/Twitter">My X/Twitter account</a></p>
                     <p><a href="https://ko-fi.com/sharenco" target="_blank" rek="noopener noreferrer" data-en="My Ko-fi (tip)" data-fr="Mon Ko-fi (tip)">My Ko-fi (tip)</a></p>
+                    <p><a href="Date.sha" data-en="Date a Sharen" data-fr="Adopte un Sharen">Date a Sharen</a></p>
                 </div>
 
                 <div class="box">
@@ -107,17 +108,20 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
     <script>
         function embedTwitch() {
             const containerWidth = document.getElementById('twitch-embed-container').offsetWidth;
-            // Calculate height for 16:9 aspect ratio
-            const height = Math.round(containerWidth * 15 / 13);
+            // Calculate height
+            const height = Math.round(containerWidth * 1 / 1);
 
             // Clear container before embedding
             document.getElementById('twitch-embed-container').innerHTML = '';
 
             new Twitch.Embed("twitch-embed-container", {
-            width: '100%',
-            height: height.toString(),
-            channel: "sharen_44", //sharen_44
-            parent: ["sharen44.com", "www.sharen44.com"]
+                width: '100%',
+                height: height.toString(),
+                channel: "sharen_44", //https://twitch.tv/sharen_44
+                parent: [
+                    "sharen44.com", 
+                    "www.sharen44.com"
+                ]
             });
         }
 

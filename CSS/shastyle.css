@@ -1,0 +1,537 @@
+/* commun */
+header {
+  margin: 0 auto;
+
+  color: rgb(255, 255, 255);
+  background-color:#2e2a28;
+
+  /* background-image: url(""); */
+  background-position: center middle;
+  background-size: cover;
+	background-repeat: repeat-y;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  font-family: sans-serif; 
+  margin: 0; /* Remove default margin */
+  color: rgb(255, 255, 255);
+
+  background-color: #000000;
+  background-image: url("../Media/Image/ShaBackground.png");
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; /* Ensures it covers the full screen */
+  /* background-attachment: fixed; Prevents it from scrolling */
+}
+
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-image: url(""); */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none; /* Allow clicking through */
+}
+
+.topnav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: linear-gradient(to right, #ff00002d, #0000002d, #0051ff2d);
+}
+
+
+
+.topnav a button {
+  background-color:#68129970;
+  width: 100%;
+  height:100%;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.topnav a:link {
+  text-decoration: none
+}
+
+.barrenav a:link {
+  text-decoration: none
+}
+
+
+section#top {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#top img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 30%;       /* Make it 30% of the container's width */
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+.barrenav-wrapper {
+  width: 100%;
+  max-width: 3000px;         /* Limit max width */
+  margin: 0 auto;            /* Center it horizontally */
+  width: 100%;               /* Allow full width on small screens */
+  padding: 0 2vw;            /* Small inner padding for breathing room */
+  box-sizing: border-box;
+}
+
+.barrenav {
+  height: 150%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #000000;
+}
+
+.barrenav a:empty {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+.barrenav a button {
+  background-color:#000000;
+  width: 100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  border-width: 1px;
+  color: white;
+}
+
+nav a button 
+{
+  font-size: calc(2px + 2vw);
+}
+
+
+#logosite img {
+  width: auto;
+  height: auto;
+}
+
+
+footer {
+  background-color: #212020dc;
+  display: flex;
+
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  width: 100%;               /* Allow full width on small screens */
+  border-radius: 0;
+  border-width: 0;
+}
+
+footer p {
+  color: #8e8a86;
+  font-size: clamp(2px, 2vw, 3px);
+  text-align: center; /* Needed for multi-line text */
+}
+
+div#Rights
+{
+  text-align: left;
+}
+
+.navbar {
+  background-color: #313236;
+  max-width: 800px;
+}
+
+.navbar a {
+  color: #aaa;
+  display: inline-block;
+  font-size: calc(2px + 2vw);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+
+table {
+  border:3px solid rgb(0, 0, 0);
+  background-color: #F5F5F5;
+  text-align:center;
+  margin:auto;
+  margin-top: 2%;
+  width:75%;
+}
+
+caption {
+  color:black;
+  font-weight:bold;
+  font-size:150%;
+  font-family: sans-serif, cursive;
+  margin-bottom:1rem;
+}
+
+th
+{
+  border-width:2px;
+  border-style:solid;
+  border-color:yellow;
+  color:black;
+  background-color:orange;
+}
+
+td
+{
+  border-width:1px;
+  border-style:solid;
+  border-color:black;
+}
+
+.titre
+{
+  font-family: sans-serif, cursive;
+  text-align:center;
+}
+
+main .titre{
+  font-size:2rem;
+}
+
+
+
+/*Customisation de la barre scroll a droite*/
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#7b00c2, #979392);
+  border-radius: 3px;
+}
+
+/*definition de l'affichage du form*/
+section#form form{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin:1rem;
+}
+
+div#Client{
+  background-color:orange;
+  opacity:0,7;
+  padding:10px;
+  border-radius:1rem;
+}
+div#Client div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+div#Composition{
+  display:grid;
+  grid-template-columns: 100%;
+  gap:2px;
+  margin-bottom: 3px;
+  background-color:orange;
+  opacity:0,7;
+  padding:10px;
+  border-radius:1rem;
+}
+div#Composition div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+fieldset{
+  border-color: white;
+  border-width: 3px;
+}
+
+form button
+{
+  margin-top: 1rem;
+  padding:5px;
+  border-radius:10px;
+  align-self: stretch;
+  justify-self: stretch;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-area: 7/1/span 2/2;
+}
+
+
+/* Page acceuil */
+
+
+h1 {
+  font-size: calc(5px + 3vw);
+  text-align: center;
+  color: #bb38b0;
+}
+
+
+
+
+
+#Presentation2 {
+  display: flex;
+  max-width: 3000px;         /* Limit max width */
+  margin: 0 auto;            /* Center it horizontally */
+  width: 100%;               /* Allow full width on small screens */
+  padding: 0 2vw;            /* Small inner padding for breathing room */
+  box-sizing: border-box;
+}
+
+#Presentation2 p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#Presentation2 img {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+
+#Presentation1 {
+  display: flex;
+  min-width: 100%;
+  max-width: 3000px;         /* Limit max width */
+  margin: 0 auto;            /* Center it horizontally */
+  width: 100%;               /* Allow full width on small screens */
+  padding: 0 2vw;            /* Small inner padding for breathing room */
+  box-sizing: border-box;
+}
+
+
+
+#Presentation1 p {
+  color: whitesmoke;
+}
+
+#Presentation1 img {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+
+#Presentation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;   /* First column is wider */
+  max-width: 3000px;         /* Limit max width */
+  margin: 0 auto;            /* Center it horizontally */
+  width: 100%;               /* Allow full width on small screens */
+  padding: 0 2vw;            /* Small inner padding for breathing room */
+  box-sizing: border-box;
+}
+
+#Presentation video {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+.column1 p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#Presentation img {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 100%;  /* Prevent it from exceeding container width */
+}
+
+
+a:link{
+  color: #8938bb;
+}
+
+a:visited{
+  color: whitesmoke;
+}
+
+/* Optional, to keep the boxes aligned vertically */
+.column {
+  background-color: #2f2f2ff2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.column1 {
+  background-color: #281d37f2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.column .box h2{
+  font-size: calc(4px + 2vw);
+  text-align: center;
+  color: whitesmoke;
+}
+
+.column1 .box h2{
+  font-size: calc(5px + 3vw);
+  text-align: center;
+  color: #bb38b0;
+}
+
+.column2 .box h3{
+  font-size: calc(4px + 2vw);
+  text-align: center;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.column2 {
+  background-color: rgb(181, 181, 181);
+  display: flex;
+  flex-direction: column;
+  color:rgb(0, 0, 0);
+  width: 100%;
+}
+
+.column2 .box p {
+  display: flex;
+  text-align: center;
+  color:rgb(0, 0, 0);
+}
+
+/* Each box */
+.box {
+  background-color: transparent;
+  padding: 1em;
+  text-align: center;
+  font-size: calc(2px + 1vw);
+}
+
+.boxleft{
+  background-color: transparent;
+  padding: 1em;
+  text-align: left;
+  font-size: calc(2px + 1vw);
+}
+
+.column .boxleft p{
+  border-radius: 0.5em;  
+  padding: 0.5em;       /* optional: gives breathing room inside */
+  text-align: left;
+  background-color: #00000031;
+} 
+
+.box p{
+  border-radius: 0.5em;  
+  padding: 0.5em;       /* optional: gives breathing room inside */
+}
+
+#player-button {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  width: clamp(50px, 8vw, 80px);
+  height: clamp(50px, 8vw, 80px);
+  font-size: clamp(18px, 3vw, 28px);
+  background-color: #33333360;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#player-container {
+  position: fixed;
+  bottom: calc(2vw + clamp(50px, 8vw, 80px) + 1vw); /* Just above the button */
+  right: 2vw;
+
+  display: none;
+  background-color: #000000;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px #0000003c;
+  z-index: 999;
+
+  width: clamp(200px, 40vw, 300px); /* Optional: responsive width */
+  color: #a8a8a8;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+#player-container audio {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#next-button {
+  align-self: right;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: clamp(3px, 2vw, 14px);
+}
+
+a button p {
+  color: whitesmoke;
+}
+
+/* Aspect Ratio Container: 16:9 */
+#twitch-embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+}
