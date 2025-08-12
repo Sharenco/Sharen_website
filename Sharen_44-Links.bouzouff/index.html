@@ -104,12 +104,29 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
     <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
     <!-- This would be way simplier if I could add a path instead of only a parent, I'm forced to use a workaround using their own API -->
-    <script type="text/javascript">
-        new Twitch.Embed("twitch-embed-container", {
+    <script>
+        function embedTwitch() {
+            const containerWidth = document.getElementById('twitch-embed-container').offsetWidth;
+            // Calculate height for 16:9 aspect ratio
+            const height = Math.round(containerWidth * 9 / 21);
+
+            // Clear container before embedding
+            document.getElementById('twitch-embed-container').innerHTML = '';
+
+            new Twitch.Embed("twitch-embed-container", {
             width: '100%',
-            height: '480',
-            channel: "sharen_44",
+            height: height.toString(),
+            channel: "sharen_44", //sharen_44
             parent: ["sharen44.com", "www.sharen44.com"]
+            });
+        }
+
+        // Initial embed
+        embedTwitch();
+
+        // Re-embed on window resize for responsiveness
+        window.addEventListener('resize', () => {
+            embedTwitch();
         });
     </script>
     <!-- NGL I hate them -->
