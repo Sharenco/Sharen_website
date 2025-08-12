@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://sharenco.github.io/Sharen_website/sitemap.xml
+Sitemap: https://sharen44.com/sitemap.xml
