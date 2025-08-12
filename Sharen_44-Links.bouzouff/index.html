@@ -68,16 +68,23 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
                 </div>
 
                 <div class="box">
+                    <div class="twitch-embed-container" style="aspect-ratio:16/9;max-width:none;min-width:100%!important;">
+                    </div>
+                </div>
+
+
+                <div class="box">
                     <p
                         data-en="I don't use a lot X/Twitter because I always end up feeling like an Incel watching people on a cute relationship, Goon content, Hateful people that hates gamers and Western games consumption, ECT..."
                         data-fr="Je n&apos;utilise pas trop X/Twitter parce que je finis toujours par me sentir comme un incel qui regarde des couples mignons, du contenu NSFW, des rageux qui détestent les gamers et les jeux occidentaux, etc..."
                     >I don't use a lot X/Twitter because I always end up feeling like an Incel watching people on a cute relationship, Goon content, Hateful people that hates gamers and Western games consumption, ECT...</p>
                 </div>
 
-                <!-- Seeing how big the last one was with each &apos;, i'll change the first and last ['] by [&apos;] and same for the ["] by [&quot;] so like that in the text it won't be needed to change them -->
-
             </div>
         </div>
+        <!-- Seeing how big the last one was with each &apos;, i'll change the first and last ['] by [&apos;] and same for the ["] by [&quot;] so like that in the text it won't be needed to change them -->
+
+
 
         <!-- Audio Player UI -->
         <div id="player-container">
@@ -94,5 +101,22 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
 
     <script src="Media/Scripts/AudioPlayer.js"></script>
     <script src="Media/Scripts/Lang.js" ></script>
+    
+    <script>
+        // Check the page's current path, trying to add twitch preview...
+        if (window.location.pathname === "/Sharen_44-Links.bouzouff") {
+            document.getElementById("twitch-embed-container").innerHTML = `
+            <iframe
+                src="https://player.twitch.tv/?channel=sharen_44
+                    &parent=sharen44.com
+                    &parent=www.sharen44.com"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowfullscreen="true">
+            </iframe>
+            `;
+        }
+    </script>
 
 </html>       
