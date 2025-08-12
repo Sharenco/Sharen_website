@@ -68,8 +68,7 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
                 </div>
 
                 <div class="box">
-                    <div class="twitch-embed-container" style="aspect-ratio:16/9;max-width:none;min-width:100%!important;">
-                    </div>
+                    <div id="twitch-embed-container" class="twitch-embed-container"></div>
                 </div>
 
 
@@ -102,21 +101,17 @@ I really don't see why people clone this tho, it's some boring guy's boring webp
     <script src="Media/Scripts/AudioPlayer.js"></script>
     <script src="Media/Scripts/Lang.js" ></script>
     
-    <script>
-        // Check the page's current path, trying to add twitch preview...
-        if (window.location.pathname === "/Sharen_44-Links.bouzouff") {
-            document.getElementById("twitch-embed-container").innerHTML = `
-            <iframe
-                src="https://player.twitch.tv/?channel=sharen_44
-                    &parent=sharen44.com
-                    &parent=www.sharen44.com"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                allowfullscreen="true">
-            </iframe>
-            `;
-        }
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <!-- This would be way simplier if I could add a path instead of only a parent, I'm forced to use a workaround using their own API -->
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed-container", {
+            width: '100%',
+            height: '480',
+            channel: "sharen_44",
+            parent: ["sharen44.com", "www.sharen44.com"]
+        });
     </script>
+    <!-- NGL I hate them -->
 
 </html>       

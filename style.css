@@ -512,9 +512,19 @@ a button p {
   color: whitesmoke;
 }
 
-.timestamp {
+/* Aspect Ratio Container: 16:9 */
+#twitch-embed-container {
+  position: relative;
+  width: 100%;
+  /* padding-bottom = (9/16)*100% = 56.25% to keep 16:9 */
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+#twitch-embed-container iframe {
   position: absolute;
-  color:rgb(82, 82, 82);
-  bottom: 2%;   /* 2% from bottom of box */
-  left: 2%;     /* 2% from left of box */
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
