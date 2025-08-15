@@ -460,6 +460,13 @@ img {
   font-size: calc(2px + 1vw);
 }
 
+.boxb {
+  background-color: transparent;
+  padding: 1em;
+  text-align: center;
+  font-size: calc(2px + 1vw);
+}
+
 .boxleft{
   background-color: transparent;
   padding: 1em;
@@ -473,6 +480,12 @@ img {
   text-align: left;
   background-color: #00000031;
 } 
+.column .boxb p {
+    border-radius: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #00000031;
+}
 
 .box p{
   border-radius: 0.5em;  
