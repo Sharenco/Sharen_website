@@ -316,6 +316,17 @@ h1 {
   text-align: center;
 }
 
+.clippy {
+  border: 2px solid whitesmoke;
+  border-radius: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;     /* Maintain aspect ratio */
+  max-width: 10%;  /* Prevent it from exceeding container width */
+}
+
 #Presentation2 img {
   border: 2px solid whitesmoke;
   border-radius: 2px;
@@ -324,7 +335,6 @@ h1 {
   margin: 0 auto;
   padding: 0;
   height: auto;     /* Maintain aspect ratio */
-  max-width: 100%;  /* Prevent it from exceeding container width */
 }
 
 
@@ -454,7 +464,7 @@ img {
 .box {
   background-color: transparent;
   padding: 1em;
-  text-align: middle;
+  text-align: center;
   font-size: calc(2px + 1vw);
 }
 
