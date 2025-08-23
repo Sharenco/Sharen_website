@@ -1,0 +1,129 @@
+<!--
+I'll add it here because i see already a lot of Git clones, this website won't add much, all the stuff you see and hear are from me, by me, or for me.
+
+If you clone it, please use it to your own usage or delete everything that are in Media folder, they are my property.
+
+Uploading a website that use my assets will be sued if you do not have my approval.
+
+I'm also using some JavaScript and will surely make it into it's own file to not have to make <scrips> inside HTML.
+
+I really don't see why people clone this tho, it's some boring guy's boring webpage...
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="This is a webpage of PocketFortress2, a fan made TF2 on mobile!">
+        <meta name="robots" content="index">
+
+        <title>The HelpPage!</title>
+
+        <link rel="canonical" href="https://sharen44.com/pocketfortress2/mainpage.mobile" />
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+        <link rel="icon" type="image/png" href="/Media/Image/Icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <base href="/pocketfortress2.com/" />
+    </head>
+
+    <body>
+        <section>
+            <div class="barrenav-wrapper">
+                <nav class="barrenav">
+                    <a href="mainpage.mobile">
+                        <button>
+                            <p>Home</p>
+                        </button>
+                    </a>
+                    <a href="help.mobile">
+                        <button>
+                            <p>Help</p>
+                        </button>
+                    </a>
+                    <a href="other.mobile">
+                        <button>
+                            <p>Other</p>
+                        </button>
+                    </a> 
+                </nav>
+            </div>
+        <section>
+            <div id="Presentation2">
+                <div class="column">
+
+                    <div class="box">
+                        <h1>Welcome to the Downloading page!</h1>
+                        <p>Please before scrolling down, watch an ad or two to help us keep the game entirely free!</p>
+                    </div>
+
+                    <div class="box">
+                        <p>the website has no ads except here, so please this would help us a lot!</p>
+                    </div>
+
+                    <div class="box">
+                        <p>there will be an advert here when it will be working...</p>
+                    </div>
+
+                    <div class="box">
+                        <p>also don't forget to join our discord!</p>
+                    </div>
+
+                    <div class="box">
+                        <a href="https://discord.gg/zmqcUYwSBK"><img class="littlebutton" src="Media/IMG/UI/discord_button.png" alt="discord picture with link"></a>
+                    </div>
+
+                    <div class="box">
+                        <p>here is the download link:</p>
+                    </div>
+
+                    <div class="box">
+                        <p id="wait-msg">Please wait 30 seconds before downloading...</p>
+                    </div>
+
+                    <div class="box">
+                        <a id="download-link" href="Media/APK/tf2m_V3.6.0.apk" download style="pointer-events: none; opacity: 0.5;">
+                            <img class="littlebutton" src="Media/IMG/UI/pocketfortress_with_mercs1.png" alt="download link">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="barrenav-wrapper">
+            <footer>
+                <p>
+                    disclaimer: This project is an independent, non-commercial fan work and is not affiliated with, endorsed by, or sponsored in any way by Valve Corporation.  
+                    No proprietary source code, assets, or confidential information belonging to Valve has been used in the development of this project.  
+                    Except for certain models and gameplay mechanics that are inspired by Valve’s original works, all other elements have been independently created by the project team.  
+                    This project is distributed free of charge and does not contain any form of monetization or microtransactions.  
+                    Should Valve Corporation request the termination of this project, we will comply fully and without contest.
+                </p>
+            </footer>
+        </div>
+
+    </body>
+
+    <script>
+        // wait time in seconds
+        let waitTime = 30;
+        const msg = document.getElementById("wait-msg");
+        const link = document.getElementById("download-link");
+
+        const timer = setInterval(() => {
+            waitTime--;
+            msg.textContent = `Please wait ${waitTime} seconds before downloading...`;
+
+            if (waitTime <= 0) {
+                clearInterval(timer);
+                msg.textContent = "You can now download:";
+                link.style.pointerEvents = "auto";
+                link.style.opacity = "1";
+            }
+        }, 1000);
+    </script>
+
+</html>
