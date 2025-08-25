@@ -494,12 +494,6 @@ img {
   padding: 0.5em;       /* optional: gives breathing room inside */
 }
 
-.box a {
-  display: inline-block;   /* shrink to fit content (the image) */
-  width: auto;             /* make sure it doesn’t stretch */
-  padding: 0;              /* remove any clickable padding */
-}
-
 a button p {
   color: whitesmoke;
   font-family: bangers;
