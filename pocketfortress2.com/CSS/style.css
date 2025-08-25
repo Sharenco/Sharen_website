@@ -498,7 +498,6 @@ img {
   display: inline-block;   /* shrink to fit content (the image) */
   width: auto;             /* make sure it doesn’t stretch */
   padding: 0;              /* remove any clickable padding */
-  margin: 0;
 }
 
 a button p {
