@@ -507,7 +507,9 @@ a button p {
 }
 
 .image-card {
-  margin-left: -5vw;   /* overlap amount */
+  position: relative;
+  display: inline-block; /* makes the container wrap around the img size */
+  margin-left: -5vw;
   cursor: pointer;
   flex: 0 0 auto;
 }
@@ -517,11 +519,9 @@ a button p {
 }
 
 .image-card img {
-  height: 15vw; /* responsive height */
-  width: auto;                        /* maintain aspect ratio */
-  border-radius: 0px;
-  box-shadow: 0 0px 0px rgba(0,0,0,0);
-  display: block;       /* removes inline spacing quirks */
+  height: 15vw;
+  width: auto;
+  display: block; /* removes tiny gaps */
 }
 
 .overlay-text {
@@ -539,4 +539,25 @@ a button p {
   position: relative;
   width: 100%;
   display: inline-block;
+}
+
+.link-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 2;
+  /* background: rgba(255, 0, 0, 0.3); for debugging */
+}
+
+.link-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    /* Optional for debugging */
+    /* background: rgba(0, 255, 0, 0.3); */
 }
