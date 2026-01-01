@@ -3,3 +3,5 @@ This is only the repository of my own little website, I felt like doing so, all 
 I don't know what else to say, except that I accept any idea and that I'll make changes and post blogs overtime in it!
 
 Here is the real [homepage](https://sharen44.com)
+
+I know the website is minimalistic, and if people want to I will do a more "Animated" version too and this one will be the "simplified HTML" version, let me know!
