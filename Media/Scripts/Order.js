@@ -3,6 +3,7 @@ const container = document.getElementById("blog-container");
 let reversed = false; // current order state
 
 function updateOrderButtonLabel() {
+    if (!orderBtn) return;
     const lang = localStorage.getItem("language") || "en";
 
     // base text from data-en/data-fr
@@ -18,13 +19,15 @@ function updateOrderButtonLabel() {
 }
 
 // reverse posts when button is clicked
-orderBtn.addEventListener("click", () => {
-    const posts = Array.from(container.children).reverse();
-    posts.forEach(p => container.appendChild(p));
+if (orderBtn && container) {
+    orderBtn.addEventListener("click", () => {
+        const posts = Array.from(container.children).reverse();
+        posts.forEach(p => container.appendChild(p));
 
-    reversed = !reversed;
-    updateOrderButtonLabel();
-});
+        reversed = !reversed;
+        updateOrderButtonLabel();
+    });
+}
 
 // Patch your existing setLanguage to also update button label
 const originalSetLanguage = setLanguage;
