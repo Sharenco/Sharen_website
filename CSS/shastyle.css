@@ -293,7 +293,7 @@ form button
 
 
 h1 {
-  font-size: calc(5px + 3vw);
+  font-size: calc(10px + 3vw);
   text-align: center;
   color: #bb38b0;
 }
@@ -415,19 +415,19 @@ a:visited{
 }
 
 .column .box h2{
-  font-size: calc(4px + 2vw);
+  font-size: calc(7px + 2vw);
   text-align: center;
   color: whitesmoke;
 }
 
 .column1 .box h2{
-  font-size: calc(5px + 3vw);
+  font-size: calc(7px + 3vw);
   text-align: center;
   color: #bb38b0;
 }
 
 .column2 .box h3{
-  font-size: calc(4px + 2vw);
+  font-size: calc(6px + 2vw);
   text-align: center;
   color: black;
 }
@@ -457,21 +457,21 @@ img {
   background-color: transparent;
   padding: 1em;
   text-align: center;
-  font-size: calc(2px + 1vw);
+  font-size: calc(4px + 1vw);
 }
 
 .boxb {
   background-color: transparent;
   padding: 1em;
   text-align: center;
-  font-size: calc(2px + 1vw);
+  font-size: calc(4px + 1vw);
 }
 
 .boxleft{
   background-color: transparent;
   padding: 1em;
   text-align: left;
-  font-size: calc(2px + 1vw);
+  font-size: calc(4px + 1vw);
 }
 
 .column .boxleft p{

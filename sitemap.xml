@@ -4,27 +4,27 @@
     <url>
         <loc>https://sharen44.com/Sharen_44.bouzouff/</loc>
         <lastmod>2026-03-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://sharen44.com/Date.sha/</loc>
-        <lastmod>2026-0-21</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>yearly</changefreq>
         <priority>0.1</priority>
     </url>
 
     <url>
+        <loc>https://sharen44.com/Date.sha/</loc>
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://sharen44.com/Sharen_44-Links.bouzouff/</loc>
-        <lastmod>2025-08-18</lastmod>
+        <lastmod>2026-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://sharen44.com/Sharen_44-Blog.bouzouff/</loc>
-        <lastmod>2025-05-04</lastmod>
+        <lastmod>2025-06-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -32,7 +32,7 @@
     <url>
         <loc>https://sharen44.com/</loc>
         <lastmod>2026-02-25</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>yearly</changefreq>
         <priority>0.1</priority>
     </url>
 
